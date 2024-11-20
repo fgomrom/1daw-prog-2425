@@ -2,6 +2,11 @@ package programacion.ut2;
 
 public class Ejercicio52Ampliación {
     public static void main(String[] args) {
+        int i = 0;
+        for (; i < 10; i++) {
+            System.out.println("a");
+        }
+        
         int n = 2;
         if (esPrimo(n))
             System.out.println("El número " + n + " es primo");
@@ -9,7 +14,12 @@ public class Ejercicio52Ampliación {
             System.out.println("El número " + n + " no es primo");
     }
 
-    static boolean esPrimo(int n) {
+    /**
+     * Calcula el primo de un numero n
+     * @param n este el numero a calcular
+     * @return true si es primo y false si no
+     */
+    public static boolean esPrimo(int n) {
         boolean esPrimo = true;
         int i = 2;
         if (n < 2) {
