@@ -33,6 +33,8 @@ public class Refuerzo29 {
         }
         System.out.println("El mayor es el: "+etiquetaArbolMayor+" que mide: "+alturaMayor);
         
+        System.out.println("Intro n:");
+        n = sc.nextInt();
         for (int i = 0; n != -1; i++) {
             if (n > alturaMayor) {
                 alturaMayor = n;
