@@ -11,7 +11,7 @@ public class Ampliacion44 {
         int numPrimos = 0;
         
         for (int i = 0; i < n; i++) {
-            if (esPrimo(n))
+            if (esPrimo(i))
                 numPrimos++;
         }
         
