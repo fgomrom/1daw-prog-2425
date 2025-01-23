@@ -1,13 +1,16 @@
-package programacion.ut4;
+package ut4;
 
 import programacion.ut4.ejercicio5.Sexo;
 
+/**
+ * @author Fran Gómez
+ */
 public class Persona {
 	// Atributos
-	public String nombre;
-	private int edad;
-	private double estatura;
-	private Sexo sexo;
+	protected String nombre;
+	protected int edad;
+	protected double estatura;
+	protected Sexo sexo;
 	// Métodos
 	public Persona(String nombre, int edad, double estatura) {
 		this.nombre = nombre;
@@ -22,6 +25,12 @@ public class Persona {
 	
 	public Persona() {
 		this.edad = 7;
+	}
+	
+	void mostrarDatos() {
+		System.out.println(nombre);
+		System.out.println(edad);
+		System.out.println(estatura);
 	}
 	
 	void metodo() {

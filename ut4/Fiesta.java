@@ -1,16 +1,12 @@
-package programacion.ut4;
-
-import programacion.ut4.ejercicio5.Sexo;
+package ut4;
 
 class Fiesta {
 
 	public static void main(String[] args) {
-		Persona pepe = new Persona();
-
-		pepe.setSexo(Sexo.HOMBRE);
-		pepe.setNombre("Pepito");
-		System.out.println("El sexo de " + pepe.getNombre() + " es "+ pepe.getSexo());
-		
+		Empleado juan = new Empleado(1000, "Juan");
+		System.out.println("Empleado: " + juan.getNombre());
+		System.out.println("Empleado: " + juan.getSalario());
+		juan.mostrarDatos();
 	}
 
 }
