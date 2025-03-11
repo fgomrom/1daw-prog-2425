@@ -1,5 +1,7 @@
 package programacion.ut4.ejercicios;
 
+import java.util.Objects;
+
 /**
  * @author Fran Gómez
  */
@@ -9,7 +11,16 @@ public class Persona {
 	protected int edad;
 	protected double estatura;
 	protected Sexo sexo;
+	
 	// Métodos
+	
+	/**
+	 * Constructor con parámetros 
+	 * 
+	 * @param nombre
+	 * @param edad
+	 * @param estatura
+	 */
 	public Persona(String nombre, int edad, double estatura) {
 		this.nombre = nombre;
 		this.edad = edad;
@@ -17,16 +28,16 @@ public class Persona {
 	}
 	
 	Persona (String nombre) {
-		this(nombre,7,1.8);
 		this.nombre = nombre;
 	}
 	
 	public Persona() {
-		this.edad = 7;
+
 	}
 	
 	public Persona(String nombre, int edad) {
-		this(nombre, edad, 0);
+		this(nombre);
+		this.edad = edad;
 	}
 	
 	/**
@@ -109,8 +120,20 @@ public class Persona {
 	public void setEstatura(double estatura) {
 		this.estatura = estatura;
 	}
-	
-	
-	
+
+	@Override
+	public String toString() {
+		return "Persona [nombre=" + nombre + ", edad=" + edad + ", estatura=" + estatura + ", sexo=" + sexo + "]";
+	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		Persona other = (Persona) obj;
+		return edad == other.edad && Double.doubleToLongBits(estatura) == Double.doubleToLongBits(other.estatura)
+				&& Objects.equals(nombre, other.nombre) && sexo == other.sexo;
+	}
 	
 }
