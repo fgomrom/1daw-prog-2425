@@ -25,6 +25,21 @@ public class Persona {
 		this.edad = 7;
 	}
 	
+	public Persona(String nombre, int edad) {
+		this(nombre, edad, 0);
+	}
+	
+	/**
+	 * Constructor copia
+	 * @param persona
+	 */
+	public Persona (Persona persona) {
+		this.nombre = persona.nombre;
+		this.edad = persona.edad;
+		this.estatura = persona.estatura;
+		this.sexo = persona.sexo;
+	}
+
 	void mostrarDatos() {
 		System.out.println(nombre);
 		System.out.println(edad);
