@@ -1,4 +1,4 @@
-package programacion.ut3;
+package programacion.ut3.ejercicios;
 
 /**
  * Crear una tabla de longitud 10 que se inicializará con números aleatorios

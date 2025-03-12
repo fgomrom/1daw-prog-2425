@@ -1,4 +1,4 @@
-package ut4;
+package programacion.ut4.ejercicios;
 
 public class Empleado extends Persona{
 	private double salario;

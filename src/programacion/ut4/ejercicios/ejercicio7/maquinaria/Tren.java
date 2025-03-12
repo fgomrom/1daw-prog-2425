@@ -1,6 +1,6 @@
-package programacion.ut4.ejercicio7.maquinaria;
+package programacion.ut4.ejercicios.ejercicio7.maquinaria;
 
-import programacion.ut4.ejercicio7.personal.Maquinista;
+import programacion.ut4.ejercicios.ejercicio7.personal.Maquinista;
 
 public class Tren {
 	Locomotora locomotora;

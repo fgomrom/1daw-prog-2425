@@ -1,4 +1,4 @@
-package programacion.ut4.ejercicio7.maquinaria;
+package programacion.ut4.ejercicios.ejercicio7.maquinaria;
 
 class Vagon {
 	int numIdentificativo;

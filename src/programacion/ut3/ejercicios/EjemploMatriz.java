@@ -1,4 +1,4 @@
-package programacion.ut3;
+package programacion.ut3.ejercicios;
 
 /**
  * Ejemplo de crear una matriz

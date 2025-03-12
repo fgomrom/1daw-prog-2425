@@ -1,6 +1,4 @@
-package programacion.ut3;
-
-import static programacion.ut3.EjemploTablas.*;
+package programacion.ut3.ejercicios;
 
 /**
  * Algoritmo principal que invoca al resto de métodos de la unidad 3

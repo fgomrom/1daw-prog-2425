@@ -2,6 +2,8 @@ package programacion.ut4.ejercicios;
 
 import java.util.Objects;
 
+import programacion.ut4.ejercicios.ejercicio5.Sexo;
+
 /**
  * @author Fran Gómez
  */

@@ -1,3 +1,5 @@
+package programacion.ut4.ejercicios;
+
 // Clase ContadorObjetos
 public class ContadorObjetos {
     // Atributo estático
@@ -15,7 +17,7 @@ public class ContadorObjetos {
 }
 
 // Clase principal
-public class Main {
+class Main {
     public static void main(String[] args) {
         // Crear objetos
         ContadorObjetos obj1 = new ContadorObjetos();

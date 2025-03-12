@@ -1,6 +1,6 @@
-package programacion.ut4.ejercicio7.maquinaria;
+package programacion.ut4.ejercicios.ejercicio7.maquinaria;
 
-import programacion.ut4.ejercicio7.personal.Mecanico;
+import programacion.ut4.ejercicios.ejercicio7.personal.Mecanico;
 
 public class Locomotora {
 	String matricula;

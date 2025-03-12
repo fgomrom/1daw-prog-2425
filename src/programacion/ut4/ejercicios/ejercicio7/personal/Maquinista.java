@@ -1,4 +1,4 @@
-package programacion.ut4.ejercicio7.personal;
+package programacion.ut4.ejercicios.ejercicio7.personal;
 
 public class Maquinista {
 //nombre, DNI, sueldo y el rango que tienen adquirido.

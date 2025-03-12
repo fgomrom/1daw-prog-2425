@@ -1,4 +1,4 @@
-package programacion.ut3;
+package programacion.ut3.ejercicios;
 
 /**
  * Métodos de ejemplos de clase para explicar las tablas o arrays

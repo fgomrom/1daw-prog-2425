@@ -1,4 +1,4 @@
-package proyecto.ud2;
+package programacion.ut2.proyecto.ud2;
 import java.util.Scanner;
 
 public class CalculadoraFinal {

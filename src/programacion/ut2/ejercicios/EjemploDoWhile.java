@@ -1,7 +1,5 @@
 package programacion.ut2.ejercicios;
 
-import java.util.Scanner;
-
 public class EjemploDoWhile {
 
     public static void main(String[] args) {

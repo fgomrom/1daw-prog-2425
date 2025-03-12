@@ -1,7 +1,5 @@
 package programacion.ut2.ejercicios;
 
-import java.util.Scanner;
-
 /**
  *
  * @author Fran
