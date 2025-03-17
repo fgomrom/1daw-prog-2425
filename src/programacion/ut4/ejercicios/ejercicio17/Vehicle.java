@@ -1,5 +1,7 @@
 package programacion.ut4.ejercicios.ejercicio17;
 
+import java.util.Objects;
+
 public abstract class Vehicle {
 	
 	private String licensePlate;
@@ -82,6 +84,23 @@ public abstract class Vehicle {
 	public String toString() {
 		return "Vehicle [licensePlate=" + licensePlate + ", brand=" + brand + ", year=" + year + ", fuelType="
 				+ fuelType + "]";
+	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(brand, fuelType, licensePlate, year);
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Vehicle other = (Vehicle) obj;
+		return Objects.equals(brand, other.brand) && fuelType == other.fuelType
+				&& Objects.equals(licensePlate, other.licensePlate) && year == other.year;
 	}
 	
 }
