@@ -7,6 +7,7 @@ public class Principal17 {
 		Vehicle coche1 = new Car("123456A", "Seat", 2020, FuelType.DIESEL, 5);
 		Car coche2 = new Car("123456B", "Seat", 2020, FuelType.DIESEL, 5);
 		Motorcycle moto1 = new Motorcycle("123456C", "Seat", 2020, FuelType.DIESEL, false);
+		//Vehicle vehicle = new Vehicle(); //No se puede instanciar clase abstracta
 		
 		// Probar toString
 		System.out.println("Coche1: " + coche1);
