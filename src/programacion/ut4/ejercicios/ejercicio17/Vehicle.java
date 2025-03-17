@@ -1,11 +1,14 @@
 package programacion.ut4.ejercicios.ejercicio17;
 
 public abstract class Vehicle {
+	
 	private String licensePlate;
 	private String brand;
 	private int year;
 	private FuelType fuelType;
 	private static int vehicleCount;
+	
+	protected abstract double calculateSpeed();
 	/**
 	 * @return the licensePlate
 	 */
@@ -73,6 +76,12 @@ public abstract class Vehicle {
 		this.brand = brand;
 		this.year = year;
 		this.fuelType = fuelType;
+	}
+	
+	@Override
+	public String toString() {
+		return "Vehicle [licensePlate=" + licensePlate + ", brand=" + brand + ", year=" + year + ", fuelType="
+				+ fuelType + "]";
 	}
 	
 }
