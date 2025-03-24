@@ -47,7 +47,8 @@ public class Persona {
 
 	@Override
 	public String toString() {
-		return nombre + " (" + edad + " años, " + genero + ")";
+		String mayorEdad = edad >= 18? "mayor":"menor";
+		return nombre + " (" + mayorEdad + " de edad, " + genero + ")";
 	}
 
 	@Override
