@@ -27,6 +27,7 @@ public class EjemploHashSet {
 			System.out.println(s);
 		}
 		
+		// Eliminar el alumno2
 		Iterator<String> it = conjuntoCadenas.iterator();
 		String s;
 		while (it.hasNext()) {
