@@ -25,7 +25,11 @@ public class EjemploHashSet {
 		
 		for(String s: conjuntoCadenas) {
 			System.out.println(s);
+			if (s.equals("libro1")) {
+				conjuntoCadenas.remove("libro1");
+			}
 		}
+		System.out.println(conjuntoCadenas);
 		
 		// Eliminar el alumno2
 		Iterator<String> it = conjuntoCadenas.iterator();
