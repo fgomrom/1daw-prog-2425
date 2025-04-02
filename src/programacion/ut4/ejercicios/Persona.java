@@ -7,10 +7,10 @@ import programacion.ut4.ejercicios.ejercicio5.Sexo;
 /**
  * @author Fran Gómez
  */
-public class Persona {
+public class Persona implements Comparable<Persona> {
 	// Atributos
 	protected String nombre;
-	protected int edad;
+	protected Integer edad;
 	protected double estatura;
 	protected Sexo sexo;
 	
@@ -128,7 +128,7 @@ public class Persona {
 		return "Persona [nombre=" + nombre + ", edad=" + edad + ", estatura=" + estatura + ", sexo=" + sexo + "]";
 	}
 
-
+	// TODO: El método equals tiene que ser concordante con el compareTo
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -136,6 +136,17 @@ public class Persona {
 		Persona other = (Persona) obj;
 		return edad == other.edad && Double.doubleToLongBits(estatura) == Double.doubleToLongBits(other.estatura)
 				&& Objects.equals(nombre, other.nombre) && sexo == other.sexo;
+	}
+
+	@Override
+	public int compareTo(Persona otra) {
+		int resultado;
+		if (this.nombre.equals(otra.nombre)) {
+			resultado = this.edad.compareTo(otra.edad);
+		} else {
+			resultado = this.nombre.compareTo(otra.nombre);
+		}
+		return resultado;
 	}
 	
 }
