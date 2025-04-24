@@ -9,7 +9,7 @@ public class Ejercicio11 {
 	/**
 	 * También puede hacerse usando addLast y removeFirst como dice el enunciado. 
 	 * Lo importante es que el orden de entrada sea el mismo que de salida.
-	 */
+r	 */
 	public static void main(String[] args) {
 		List<String> cola = new ArrayList<>();
 		
