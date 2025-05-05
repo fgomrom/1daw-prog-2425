@@ -5,6 +5,8 @@ public class Persona {
 	private int edad;
 	private Genero genero;
 	private static int contadorPersonas = 0;
+	
+	public Persona () {}
 
 	public Persona(String nombre, int edad, Genero genero) {
 		this.nombre = nombre;
@@ -30,6 +32,9 @@ public class Persona {
 	}
 
 	public void setEdad(int edad) {
+		if (edad < 0) {
+			throw new IllegalArgumentException("Edad debe ser 0 o mayor");
+		}
 		this.edad = edad;
 	}
 
