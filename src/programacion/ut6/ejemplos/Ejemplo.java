@@ -1,5 +1,6 @@
 package programacion.ut6.ejemplos;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Ejemplo {
@@ -10,8 +11,13 @@ public class Ejemplo {
 			int dividendo = sc.nextInt();
 			int divisor = sc.nextInt();
 			System.out.println("Resultado: " + dividendo / divisor);
-		} catch (Throwable e) {
-			System.out.println("No se puede dividir por 0");
+		} catch (ArithmeticException e) {
+			System.err.println("No se puede dividir por 0. Mensaje: " + e.getMessage());
+			e.printStackTrace();
+		} catch (InputMismatchException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
 		} finally {
 			sc.close();
 			System.out.println("Fin del programa");
