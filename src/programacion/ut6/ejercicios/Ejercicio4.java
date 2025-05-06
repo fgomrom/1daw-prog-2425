@@ -13,6 +13,7 @@ public class Ejercicio4 {
 			rellenarLista(lista, 4);
 		} catch (IllegalArgumentException e) {
 			System.err.println(e.getMessage());
+			System.err.println(e.getClass());
 		}
 		System.out.println("Lista: " + lista);
 	}
@@ -23,9 +24,10 @@ public class Ejercicio4 {
 		}
 	}
 	
-	private static void rellenarLista(List<Integer> lista, Integer entero) throws IllegalArgumentException {
+	private static void rellenarLista(List<Integer> lista, Integer entero) throws IllegalArgumentException, NumeroRepetidoException {
 		if (lista.contains(entero)) {
-			throw new IllegalArgumentException("El número ya está en la lista");
+			//throw new IllegalArgumentException("El número ya está en la lista");
+			throw new NumeroRepetidoException("El número ya está en la lista");
 		} else {
 			lista.add(entero);
 		}

@@ -1,5 +1,7 @@
 package programacion.ut4.examen;
 
+import programacion.ut6.ejemplos.EdadInvalidaException;
+
 public class Persona {
 	private String nombre;
 	private int edad;
@@ -33,7 +35,7 @@ public class Persona {
 
 	public void setEdad(int edad) {
 		if (edad < 0) {
-			throw new IllegalArgumentException("Edad debe ser 0 o mayor");
+			throw new EdadInvalidaException("Edad debe ser 0 o mayor");
 		}
 		this.edad = edad;
 	}
