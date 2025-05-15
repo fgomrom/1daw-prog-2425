@@ -1,0 +1,10 @@
+<alumnos>
+  <alumno id="1">
+    <nombre>Juan</nombre>
+    <nota>8</nota>
+  </alumno>
+  <alumno id="2">
+    <nombre>Ana</nombre>
+    <nota>9</nota>
+  </alumno>
+</alumnos>
