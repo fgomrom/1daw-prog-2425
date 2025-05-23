@@ -1,4 +1,4 @@
-package programacion.ut8.ejercicios.ejercicio1;
+package programacion.ut8.ejercicios.ejercicio1_2_3_4_5_6_7;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -7,10 +7,23 @@ import java.time.LocalDate;
 import java.util.List;
 
 import javax.persistence.Embedded;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Transient;
 
 public class EventoMusical implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="miSeq")
+	@SequenceGenerator(name = "miSeq", allocationSize=10, initialValue=10)
+	private Integer id;
+	
+	@Transient
+	private int control;
 	
 	private String nombre;
 	private LocalDate fecha;
