@@ -3,6 +3,10 @@ package programacion.ut9.ejemplos;
 import java.awt.Button;
 import java.awt.Frame;
 import java.awt.TextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class AWT {
 
@@ -24,6 +28,25 @@ public class AWT {
 		cajaTexto.setBounds(30, 70, 100, 30);
 		marco.add(cajaTexto);
 		
+		botonSalir.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				((Frame)botonSalir.getParent()).dispose();
+			}
+		});
+		
+		botonLimpiar.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				cajaTexto.setText("");
+			}
+		});
+		
+		marco.addWindowListener(new WindowAdapter() {
+			@Override
+			public void windowClosing(WindowEvent e) {
+				marco.dispose();
+			}
+		});
 	}
-
 }
